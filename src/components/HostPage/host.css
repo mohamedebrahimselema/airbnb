@@ -1,0 +1,147 @@
+.black-logo-svg:hover {
+  background: rgb(231, 233, 235);
+  cursor: pointer;
+  width: 5rem;
+  border-radius: 50%;
+}
+.host-container {
+  padding-top: 7rem;
+  padding-left: 4.5rem;
+}
+.host-header,
+.help-header {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 50px;
+}
+.host-details {
+  padding-top: 1.5rem;
+}
+.getstarted-btn,
+.agree-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: linear-gradient(rgb(255, 56, 92), rgb(189, 30, 89));
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+}
+.getstarted-btn:hover {
+  background: linear-gradient(#f74a6a, #bb4772);
+}
+.host-btn {
+  padding-top: 1.5rem;
+}
+.host-parg {
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+.host-img {
+  height: 27rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.explore-img {
+  height: 15rem;
+  width: 100%;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.explore-container {
+  border-top: solid 2px rgb(226, 226, 226);
+  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+}
+.explore-header {
+  padding-bottom: 3rem;
+}
+.explore-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.castle-img {
+  height: 8rem;
+}
+/* safty_section  */
+.safty-logo,
+.help-logo {
+  height: 3rem;
+}
+.safty-header {
+  padding: 3.5rem;
+}
+.safty-container {
+  border-top: solid 2px rgb(226, 226, 226);
+  padding: 2rem;
+}
+.host-form-container {
+  padding-top: 7rem;
+  padding-left: 4.5rem;
+  height: 80vh;
+  background: rgb(252, 248, 248);
+}
+
+.form-btn {
+  padding: 0.8rem 1.5rem;
+  background: black;
+  color: white;
+  width: 60%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+/* help_section  */
+.host-help {
+  height: 90vh;
+  margin-top: 8rem;
+}
+
+/* get_started  */
+.ready-host {
+  padding-top: 20rem;
+  height: 20rem;
+}
+.ready-host {
+  border-top: solid 2px rgb(226, 226, 226);
+  padding-top: 5rem;
+  padding-left: 3rem;
+}
+.ready-host h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.ready-host span {
+  font-size: 1.5rem;
+}
+.ready-host button {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .ready-host {
+    margin-top: 23rem;
+    padding-bottom: 22rem;
+    /* max-height: 23rem; */
+  }
+  .host-help-sec,
+  .host-help-sec span {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .host-container {
+    padding-top: 1rem;
+  }
+  .host-btn {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #484848;
+  background-color: #fff;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._hgs47m {
+  display: table !important;
+  width: 100% !important;
+  border-spacing: 0px !important;
+}
+._n5lh69r {
+  display: table-cell !important;
+  width: 100% !important;
+  vertical-align: top !important;
+}
+._14i3z6h {
+  color: inherit !important;
+  font-size: 1em !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+._1yrl4d7p {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  line-height: 1.125em !important;
+  color: #484848 !important;
+}
+._11ry7lz {
+  color: #222222 !important;
+}
+.margin-container {
+  margin-bottom: 24px;
+}

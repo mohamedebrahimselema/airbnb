@@ -1,0 +1,7 @@
+.card {
+  max-width: 100% !important;
+}
+
+.card-img-top {
+  padding: 1.25rem;
+}

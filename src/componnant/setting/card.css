@@ -1,0 +1,15 @@
+#cards {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+#cards h1 {
+  font-weight: bold;
+}
+#cards p {
+  margin-bottom: 4rem;
+}
+#cards .card {
+  /* max-width: 30% !important; */
+  cursor: pointer;
+}

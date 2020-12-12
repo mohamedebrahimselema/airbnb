@@ -9,17 +9,22 @@ function CardOne() {
   };
   return (
     <>
-      <div>
+      <div className="carousol-container">
         <div
           src={hostObj.imgURL}
           alt={hostObj.title}
           className="host-img"
           style={{ backgroundImage: `url(${hostObj.imgURL})` }}
         />
-        <h2>{hostObj.title}</h2>
-        <span>{hostObj.details}</span>
-        <br />
-        <div href="#">{hostObj.checkout}</div>
+        <div className="container-fluid pl-md-5 pl-lg-0" >
+        <div className="pb-2">
+          <h4 className="pt-2 font-weight-bold">{hostObj.title}</h4>
+          <span>{hostObj.details}</span>
+        </div>
+        <a className="host-link" href="#">
+          {hostObj.checkout}
+        </a>
+        </div>
       </div>
     </>
   );

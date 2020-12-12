@@ -36,8 +36,8 @@ function Safty() {
           <h1>Safety is our priority</h1>
         </div>
         <div className="row justify-content-around">
-          {saftyCards.map(card => {
-            return <SaftyCards card={card} />;
+          {saftyCards.map((card, i) => {
+            return <SaftyCards card={card} key={i} />;
           })}
         </div>
       </div>

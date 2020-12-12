@@ -8,7 +8,7 @@ function ShareRoom() {
     return (
       <>
         <div
-          class="_6ikqekk"
+          className="_6ikqekk"
           style={{
             height: "64px",
             width: "96px",

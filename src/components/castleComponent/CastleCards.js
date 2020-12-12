@@ -2,7 +2,7 @@ import React from "react";
 
 function CastleCards({ card }) {
   return (
-    <div className="col-lg-2 col-md-4 col-12">
+    <div className="col-lg-2 col-md-4 col-12 mt-2">
       <div
         src={card.imgURL}
         alt={card.title}

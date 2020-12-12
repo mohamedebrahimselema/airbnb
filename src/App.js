@@ -8,9 +8,9 @@ import ListSpace from "./components/accom_after_host/ListSpace";
 function App() {
   return (
     <>
-      <HostPage />
-      <SignUp />
-      <Accom_host />
+      {/* <HostPage /> */}
+      {/* <SignUp /> */}
+      {/* <Accom_host /> */}
       <ListSpace />
     </>
   );

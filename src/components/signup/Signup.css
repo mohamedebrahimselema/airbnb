@@ -56,3 +56,23 @@
   border: none;
   font-size: 1.2rem;
 }
+#fName:focus,
+#lName:focus {
+  border: 2px solid lightgray;
+}
+.error {
+  color: red;
+}
+@media only screen and (max-width: 411px) {
+  .signup-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .signup-container {
+    width: 35rem;
+    margin: auto;
+  }
+}

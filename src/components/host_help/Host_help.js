@@ -7,8 +7,8 @@ import Get_started from "./Get_started";
 function Host_help() {
   return (
     <>
-      <section className="host-help">
-        <div className="row">
+      <section className="host-help container-fluid">
+        <div className="row pb-5">
           <div className="col-md-6 col-12 p-5">
             <h1 className="help-header">We’re here to help</h1>
           </div>

@@ -41,8 +41,8 @@ function Castle() {
           <h1>From castles to condos, guests book it all</h1>
         </div>
         <div className="row">
-          {exploreCard.map(card => {
-            return <CastleCards card={card} />;
+          {exploreCard.map((card, i) => {
+            return <CastleCards card={card} key={i} />;
           })}
         </div>
       </div>

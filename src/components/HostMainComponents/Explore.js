@@ -39,8 +39,8 @@ function Explore() {
           <h1>Explore how hosting works</h1>
         </div>
         <div className="row">
-          {exploreCard.map(card => {
-            return <ExploreCard card={card} />;
+          {exploreCard.map((card, i) => {
+            return <ExploreCard card={card} key={i} />;
           })}
         </div>
       </div>

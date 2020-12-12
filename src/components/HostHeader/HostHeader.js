@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-function HostHeader() {
+function HostHeader({ navbar, setNavbar }) {
+  const changeBackground = () => {
+    if (window.scrollY >= 750) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <div className="black-logo-svg">
+    <div className={navbar ? "black-logo sticky-top bloring" : "black-logo "}>
       <svg
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
@@ -11,10 +21,8 @@ function HostHeader() {
         focusable="false"
         className="black-logo-svg"
         style={{
-          display: "block",
           height: "36px",
           width: "36px",
-          fill: "rgb(33, 0, 52)",
           marginTop: "1.5rem",
           marginLeft: "1.5rem",
         }}

@@ -2,7 +2,7 @@ import React from "react";
 
 function ExploreCard({ card }) {
   return (
-    <div className="col-lg-3 col-md-6 col-12">
+    <div className="col-lg-3 col-md-6 col-12 mt-2">
       <div
         src={card.imgURL}
         alt={card.title}

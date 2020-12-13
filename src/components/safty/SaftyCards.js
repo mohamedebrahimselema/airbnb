@@ -1,4 +1,5 @@
 import React from "react";
+
 function SaftyCards({ card }) {
   return (
     <div className="col-lg-3 col-md-8 col-12 mt-4 mt-lg-0">

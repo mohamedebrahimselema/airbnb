@@ -1,5 +1,6 @@
 import React from "react";
 import CastleCards from "../castleComponent/CastleCards";
+
 function Castle() {
   const exploreCard = [
     {

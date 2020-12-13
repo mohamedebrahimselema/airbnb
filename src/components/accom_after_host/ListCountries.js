@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "@material-ui/core/Select";
 
-function ListCountries({ state, handleChange }) {
+function ListCountries({ register }) {
   const country_list = [
     "Afghanistan",
     "Albania",
@@ -222,10 +222,9 @@ function ListCountries({ state, handleChange }) {
       <br />
       <Select
         native
-        value={state.country}
-        onChange={handleChange}
         inputProps={{
           name: "country",
+          ref: register({ required: true }),
         }}
         style={{ width: "100%", padding: "1rem" }}
       >

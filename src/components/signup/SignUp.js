@@ -9,6 +9,8 @@ import "./Signup.css";
 
 function SignUp() {
   const { register, handleSubmit, errors } = useForm();
+
+  // *******print the data in the console******** //
   const onSubmitHandler = data => {
     console.log(data);
   };

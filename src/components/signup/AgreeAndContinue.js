@@ -3,6 +3,7 @@ import React from "react";
 function AgreeAndContinue() {
   return (
     <>
+      {/* submit Form */}
       <span>
         By selecting Agree and continue below, I agree to Airbnb’s
         <a href="#">Terms of Service</a> ,

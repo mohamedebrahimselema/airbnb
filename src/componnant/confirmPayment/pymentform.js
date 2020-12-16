@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { FaRegCreditCard } from "react-icons/fa"
+import { useForm } from "react-hook-form";
+
 
 import "./pymentform.css"
 
@@ -7,26 +9,33 @@ import "./pymentform.css"
 
 let PaymentForm = () => {
 
-    const [cardNumberState, cardNumberSet] = useState("");
-    const [cvvState, cvvSet] = useState("");
-    const [expirState, expireSet] = useState("");
+const { register, handleSubmit, watch, errors } = useForm();
+
+const onSubmit=(data)=>{
+    console.log(data);
+}
+    // const [cardNumberState, cardNumberSet] = useState("");
+    // const [cvvState, cvvSet] = useState("");
+    // const [expirState, expireSet] = useState("");
 
     return (
         <div id="paymentForm">
-            <form action="/#" method="post" id="">
+            <form action="/#" method="post" id="" onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
-                    <select className="form-control rounded  col mb-3 b-2">
-                        <option name="1"><FaRegCreditCard />  Credit or debit card</option>
-                        <option name="2">PayPal</option>
-                        <option name="3">Google Pay</option>
+                    <select name="way" ref={register} className="form-control rounded  col mb-3 b-2" >
+                        <option value="1"><FaRegCreditCard />  Credit or debit card</option>
+                        <option value="2">PayPal</option>
+                        <option value="3">Google Pay</option>
                     </select>
                 </div>
                 <div className="row">
-                    <input type="text" name="cardnumber" className="form-control rounded  col-12 is-invalid" placeholder="Card number" id="" onChange={(e) => cardNumberSet(e.target.value)} value={cardNumberState} />
-                    <input type="text" name="expiration" className="form-control rounded  col is-invalid" placeholder="YY/MM" id="" onChange={(e) => expireSet(e.target.value)} value={expirState} />
-                    <input type="text" name="cvv" className="form-control rounded  col is-invalid" placeholder="CVV" onChange={(e) => cvvSet(e.target.value)} value={cvvState} />
+                    <input ref={register({required:true})} type="text" name="cardnumber" aria-invalid={errors.firstName ? "true" : "false"}
+                    className="form-control rounded  col-12 " placeholder="Card number" id=""  />
+                    
+                    <input ref={register({required:true})} type="text" name="expiration" className="form-control rounded  col " placeholder="YY/MM" id="" />
+                    <input ref={register({required:true})} type="text" name="cvv" className="form-control rounded  col " placeholder="CVV"  />
                 </div>
-                <a name="" id="confirm-btn" className="btn rounded font-weight-bold mb-3" href="#" role="button" style={{ background: "#FE375C", color: "#FFFFFF" }}>Confirm Payment</a>
+                <button name="" id="confirm-btn" className="btn rounded font-weight-bold mb-3" href="#" role="button" style={{ background: "#FE375C", color: "#FFFFFF" }}>Confirm Payment</button>
             </form >
             <span className="line mb-4 d-block"></span>
 

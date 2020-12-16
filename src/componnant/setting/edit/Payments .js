@@ -5,6 +5,8 @@ import PaymentTow from "./PymentComponant/Payment_2";
 import PaymentOne from "./PymentComponant/Payment_1";
 import Taxes from "./PymentComponant/payment_3";
 
+import "./payment.css"
+
 const Payments = () => {
   const history = useHistory();
 
@@ -25,8 +27,8 @@ const Payments = () => {
           </li>
         </ul>
         <h1 className="font-weight-bold">Payments & payouts</h1>
-        <Tabs defaultActiveKey="PAYMENTS" id="uncontrolled-tab-example">
-          <Tab eventKey="PAYMENTS" title="PAYMENTS">
+        <Tabs className='myTabs mb-4' defaultActiveKey="PAYMENTS">
+          <Tab tabClassName='myTab' eventKey="PAYMENTS" title="PAYMENTS">
             <PaymentOne />
           </Tab>
           <Tab eventKey="PAYOUTS" title="PAYOUTS">

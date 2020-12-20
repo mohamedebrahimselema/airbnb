@@ -54,7 +54,7 @@ export class MapContainer2 extends PureComponent {
       right: "0",
     };
     const style = {
-      display: "inlineBlock",
+      // display: "inlineBlock",
       position: "absolute",
       // marginLeft: "3em",
       // marginBottom: "2em",

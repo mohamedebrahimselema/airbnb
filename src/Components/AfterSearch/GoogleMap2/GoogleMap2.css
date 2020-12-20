@@ -1,5 +1,9 @@
-@media screen and (max-width:669px) {
+@media screen and (max-width:990px) {
     .map {
         display: none
     }
 }
+
+/* .map {
+    display: none;
+} */

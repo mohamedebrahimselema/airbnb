@@ -50,13 +50,12 @@ export class MapContainer2 extends PureComponent {
   render() {
     const containerStyle = {
       width: "90%",
-      height: "100%",
+      height: "70%",
     };
     const style = {
       display: "inlineBlock",
       position: "absolute",
       marginLeft: "3em",
-      marginBottom: "2em",
     };
     return (
       <Map

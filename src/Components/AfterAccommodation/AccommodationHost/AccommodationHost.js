@@ -34,7 +34,11 @@ const AccommodationHost = () => {
               <p>4 guests · 1 bed · 1 bath</p>
             </div>
             <div className="col-md-5 offset-md-2">
-              <AccountCircleIcon />
+              <img
+                className="rounded-circle  "
+                src="https://a0.muscache.com/im/pictures/user/166ef51b-c0cf-4e90-b1b2-c4259bbd7258.jpg"
+                alt="reviewer-img"
+              />
             </div>
           </div>
 

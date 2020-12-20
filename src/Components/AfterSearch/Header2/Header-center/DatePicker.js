@@ -3,8 +3,8 @@ import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 
-import { DateRangePicker } from "react-date-range";
-
+import { DateRange } from "react-date-range";
+import "./DatePicker.css";
 const DatePicker = props => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -22,9 +22,10 @@ const DatePicker = props => {
     props.endDate(format(endDate, "MMM d ,YYY"));
   };
   handleDate();
+
   return (
     <div className="datePicker">
-      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <DateRange ranges={[selectionRange]} onChange={handleSelect} />
     </div>
   );
 };
